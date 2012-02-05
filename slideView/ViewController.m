@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize _tableView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -18,11 +19,58 @@
 
 #pragma mark - View lifecycle
 
+-(NSInteger)tableView:(UITableView *)tableView
+numberOfRowsInSection:(NSInteger)section{
+    
+    return 50;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView 
+                             dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] 
+                 initWithStyle:UITableViewCellStyleDefault 
+                 reuseIdentifier:CellIdentifier];
+    }
+
+    UIImage *img = [UIImage imageNamed:@"img1.png"];
+
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+    imageView.frame = CGRectMake(-40, 40, 320, 240);
+    imageView.transform = CGAffineTransformMakeRotation(M_PI * -90 / 180.0);
+    imageView.userInteractionEnabled = YES;
+    [cell addSubview:imageView];
+    return cell;
+}
+
+
+-(CGFloat)tableView:
+(UITableView *)tableView
+heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 320;
+}
+
+-(void)tableView:
+(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"index:%d",indexPath.row);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(40, 0, 240, 320) style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.transform = CGAffineTransformMakeRotation(M_PI * 90 / 180.0);
+    // scrollbarの位置がおかしいけど我慢するか向きかえてrowの場所かえて
+    [self.view addSubview:_tableView];
 }
+
+
 
 - (void)viewDidUnload
 {

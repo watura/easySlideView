@@ -15,6 +15,7 @@
 		418F6B7814DE359A005FC310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418F6B7714DE359A005FC310 /* AppDelegate.m */; };
 		418F6B7B14DE359A005FC310 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418F6B7914DE359A005FC310 /* MainStoryboard.storyboard */; };
 		418F6B7E14DE359A005FC310 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418F6B7D14DE359A005FC310 /* ViewController.m */; };
+		418F6B8514DE43C5005FC310 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 418F6B8414DE43C5005FC310 /* img1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		418F6B6714DE359A005FC310 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		418F6B6914DE359A005FC310 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		418F6B6B14DE359A005FC310 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		418F6B6F14DE359A005FC310 /* slideView-Info.plist */ = {isa = PBXFileReference; path = "slideView-Info.plist"; sourceTree = "<group>"; };
+		418F6B6F14DE359A005FC310 /* slideView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "slideView-Info.plist"; sourceTree = "<group>"; };
 		418F6B7114DE359A005FC310 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		418F6B7314DE359A005FC310 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		418F6B7514DE359A005FC310 /* slideView-Prefix.pch */ = {isa = PBXFileReference; path = "slideView-Prefix.pch"; sourceTree = "<group>"; };
-		418F6B7614DE359A005FC310 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		418F6B7514DE359A005FC310 /* slideView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "slideView-Prefix.pch"; sourceTree = "<group>"; };
+		418F6B7614DE359A005FC310 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		418F6B7714DE359A005FC310 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		418F6B7A14DE359A005FC310 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		418F6B7C14DE359A005FC310 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		418F6B7C14DE359A005FC310 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		418F6B7D14DE359A005FC310 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		418F6B8414DE43C5005FC310 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				418F6B7714DE359A005FC310 /* AppDelegate.m */,
 				418F6B7914DE359A005FC310 /* MainStoryboard.storyboard */,
 				418F6B7C14DE359A005FC310 /* ViewController.h */,
+				418F6B8414DE43C5005FC310 /* img1.png */,
 				418F6B7D14DE359A005FC310 /* ViewController.m */,
 				418F6B6E14DE359A005FC310 /* Supporting Files */,
 			);
@@ -151,6 +154,7 @@
 			files = (
 				418F6B7214DE359A005FC310 /* InfoPlist.strings in Resources */,
 				418F6B7B14DE359A005FC310 /* MainStoryboard.storyboard in Resources */,
+				418F6B8514DE43C5005FC310 /* img1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +199,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wataru Nishimoto (B3S79U9CEE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -210,6 +215,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "D991B1E4-187F-467E-AD38-F33EC6E8B039";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -220,6 +226,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wataru Nishimoto (B3S79U9CEE)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -229,6 +236,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D991B1E4-187F-467E-AD38-F33EC6E8B039";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -237,10 +245,12 @@
 		418F6B8214DE359A005FC310 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wataru Nishimoto (B3S79U9CEE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "slideView/slideView-Prefix.pch";
 				INFOPLIST_FILE = "slideView/slideView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D991B1E4-187F-467E-AD38-F33EC6E8B039";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -248,10 +258,12 @@
 		418F6B8314DE359A005FC310 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wataru Nishimoto (B3S79U9CEE)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "slideView/slideView-Prefix.pch";
 				INFOPLIST_FILE = "slideView/slideView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D991B1E4-187F-467E-AD38-F33EC6E8B039";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -275,6 +287,7 @@
 				418F6B8314DE359A005FC310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
