@@ -40,7 +40,7 @@ numberOfRowsInSection:(NSInteger)section{
 
     UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
     imageView.frame = CGRectMake(-40, 40, 320, 240);
-    imageView.transform = CGAffineTransformMakeRotation(M_PI * -90 / 180.0);
+    imageView.transform = CGAffineTransformMakeRotation(M_PI * 90 / 180.0);
     imageView.userInteractionEnabled = YES;
     [cell addSubview:imageView];
     return cell;
@@ -65,7 +65,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(40, 0, 240, 320) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.transform = CGAffineTransformMakeRotation(M_PI * 90 / 180.0);
+    _tableView.transform = CGAffineTransformMakeRotation(M_PI * -90 / 180.0);
     // scrollbarの位置がおかしいけど我慢するか向きかえてrowの場所かえて
     [self.view addSubview:_tableView];
 }
